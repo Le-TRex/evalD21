@@ -175,7 +175,7 @@ const exam = [
 	},
 	{
 	 name: "q6_a3",
-	 text: "il permet de faire un site le plus légé possible"
+	 text: "il permet de faire un site le plus léger possible"
 	}
       ]
     }
@@ -216,3 +216,5 @@ const exam = [
     }
   }
 ];
+
+export default exam
