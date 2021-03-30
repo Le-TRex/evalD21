@@ -4,11 +4,11 @@ import Question from './Question'
 
 function Form(){
   return(
-    <div className="form">
+    <form action="http://188.165.104.163/exam" method="POST">
       {exam.map((question, index)=>(
         <Question question={question} key={index}/>
       ))}
-    </div>
+    </form>
   )
 }
 
