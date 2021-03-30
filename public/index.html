@@ -10,34 +10,163 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>QCM Eval D21</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <form action="http://188.165.104.163/exam" method="POST">
+      <label for="lastname">Nom</label>
+      <input type="text" name="lastname" id="lastname"/>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <label for="firstname">Prénom</label>
+      <input type="text" name="firstname" id="firstname"/>
+
+      <br /><br />
+
+      <p>À quoi sert React ?</p>
+      <input type="radio" name="q0" value="q0_a1" id="q0_a1">
+      <label for="q0_a1">À administrer des bases de données</label>
+
+      <input type="radio" name="q0" value="q0_a2" id="q0_a2">
+      <label for="q0_a2">À créer des interfaces utilisateurs en Javascript</label>
+
+      <input type="radio" name="q0" value="q0_a3" id="q0_a3">
+      <label for="q0_a3">À envoyer des requêtes réseau avec Javascript</label>
+
+      <input type="radio" name="q0" value="q0_a4" id="q0_a4">
+      <label for="q0_a4">À rien</label>
+
+      <br/><br />
+
+      <p>Sur quel concept repose React ?</p>
+      <input type="radio" name="q1" value="q1_a1" id="q1_a1">
+      <label for="q1_a1">Les modules</label>
+
+      <input type="radio" name="q1" value="q1_a2" id="q1_a2">
+      <label for="q1_a2">Les services</label>
+
+      <input type="radio" name="q1" value="q1_a3" id="q1_a3">
+      <label for="q1_a3">Les composants</label>
+
+      <input type="radio" name="q1" value="q1_a4" id="q1_a4">
+      <label for="q1_a4">Les microservices</label>
+
+      <br /><br />
+
+      <p>Sur quel concept repose React ?</p>
+      <input type="radio" name="q2" value="q2_a1" id="q2_a1">
+      <label for="q2_a1">Google</label>
+
+      <input type="radio" name="q2" value="q2_a2" id="q2_a2">
+      <label for="q2_a2">Twitter</label>
+
+      <input type="radio" name="q2" value="q2_a3" id="q2_a3">
+      <label for="q2_a3">Apple</label>
+
+      <input type="radio" name="q2" value="q2_a4" id="q2_a4">
+      <label for="q2_a4">Facebook</label>
+
+      <br /><br />
+
+      <p>À quoi servent les props</p>
+      <input type="radio" name="q3" value="q3_a1" id="q3_a1">
+      <label for="q3_a1">À passer des propriétés aux composants</label>
+
+      <input type="radio" name="q3" value="q3_a2" id="q3_a2">
+      <label for="q3_a2">À créer un état pour le composant</label>
+
+      <input type="radio" name="q3" value="q3_a3" id="q3_a3">
+      <label for="q3_a3">À afficher le composant</label>
+
+      <input type="radio" name="q3" value="q3_a4" id="q3_a4">
+      <label for="q3_a4">À casser les pieds</label>
+
+      <br /><br />
+
+      <p>À quoi servent les props</p>
+      <input type="radio" name="q3" value="q3_a1" id="q3_a1">
+      <label for="q3_a1">À passer des propriétés aux composants</label>
+
+      <input type="radio" name="q3" value="q3_a2" id="q3_a2">
+      <label for="q3_a2">À créer un état pour le composant</label>
+
+      <input type="radio" name="q3" value="q3_a3" id="q3_a3">
+      <label for="q3_a3">À afficher le composant</label>
+
+      <input type="radio" name="q3" value="q3_a4" id="q3_a4">
+      <label for="q3_a4">À casser les pieds</label>
+
+      <br /><br />
+
+      <p>À quoi sert JSX ? </p>
+      <input type="radio" name="q4" value="q4_a1" id="q4_a1">
+      <label for="q4_a1">À faire des appels à une base de données</label>
+
+      <input type="radio" name="q4" value="q4_a2" id="q4_a2">
+      <label for="q4_a2">À rajouter des types à JavaScript</label>
+
+      <input type="radio" name="q4" value="q4_a3" id="q4_a3">
+      <label for="q4_a3">À fournir une surcouche à JavaScript pour appeler les fonctions React</label>
+
+      <input type="radio" name="q4" value="q4_a4" id="q4_a4">
+      <label for="q4_a4">C'est un autre nom pour JavaScript</label>
+
+      <br /><br />
+
+      <p>Qu'est-ce qu'un state ?</p>
+      <input type="checkbox" name="q5" id="q5_a1">
+      <label for="q5_a1">Un stockage permanent</label>
+
+      <input type="checkbox" name="q5" id="q5_a2">
+      <label for="q5_a2">Un stockage interne au composant</label>
+
+      <input type="checkbox" name="q5" id="q5_a3">
+      <label for="q5_a3">Aucun des deux</label>
+
+      <br /><br />
+
+      <p>Qu'est-ce qu'un state ?</p>
+      <input type="checkbox" name="q5" id="q5_a1">
+      <label for="q5_a1">Un stockage permanent</label>
+
+      <input type="checkbox" name="q5" id="q5_a2">
+      <label for="q5_a2">Un stockage interne au composant</label>
+
+      <input type="checkbox" name="q5" id="q5_a3">
+      <label for="q5_a3">Aucun des deux</label>
+
+      <br /><br />
+
+      <p>Quels sont les avantages de React ?</p>
+      <input type="checkbox" name="q6" id="q6_a1">
+      <label for="q6_a1">Il permet de générer des balises HTML dynamiquement sur le navigateur</label>
+
+      <input type="checkbox" name="q6" id="q6_a2">
+      <label for="q6_a2">Il permet d'améliorer les perfs en réduisant les échanges réseau</label>
+
+      <input type="checkbox" name="q6" id="q6_a3">
+      <label for="q6_a3">Il permet de faire un site le plus léger possible</label>
+
+      <br /><br />
+
+      <p>Comment puis-je faire un affichage conditionnel ?</p>
+      <input type="checkbox" name="q7" id="q7_a1">
+      <label for="q7_a1">En utilisant une fonction</label>
+
+      <input type="checkbox" name="q7" id="q7_a2">
+      <label for="q7_a2">En passant des paramètres à la fonction 'ReactDOM.render'</label>
+
+      <input type="checkbox" name="q7" id="q7_a3">
+      <label for="q7_a3">En utilisant une expression ternaire</label>
+
+      <br /><br />
+
+      <input type="submit" value="Go !"/>
+    </form>
+
   </body>
 </html>
