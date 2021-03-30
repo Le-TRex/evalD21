@@ -1,7 +1,7 @@
 import {Fragment} from 'react'
+import Switches from './Switch'
 
 function Question ({question}) {
-
 
   function displayQuestionDependingOnItsType(question){
     const type = question.answer.type
@@ -43,11 +43,12 @@ function Question ({question}) {
           <input type={type} name={question.answer.name} id={question.answer.name}/>
         </p>
       )
-
     }else {
       return (
+        //TODO Lier le switch de Material-ui à la question au lieu des inputs type radio
         <Fragment>
           <p>{question.question}</p>
+          <Switches />
           <div>
             <input type="radio" name={answerName} value="oui" id="oui"/>
             <label htmlFor="oui">oui</label>
