@@ -1,6 +1,21 @@
 .form-question {
-    border: 1px solid #ffc4dc;
-    padding: 20px;
+    border: 2px solid #ffc4dc;
+    border-radius: 50px;
+    padding: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+/*TODO mobile flex-direction column et pas de margin-left sur input*/
+.inputTypeText {
+    display: flex;
+    align-items: center;
+}
+
+.inputTypeText > input {
+    height: 32px;
+    margin-left: 10px;
+}
+
+h3 {
+    color: #7d51a0;
 }
