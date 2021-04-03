@@ -9,6 +9,7 @@ function Form(){
       {exam.map((question, index)=>(
         <Question question={question} key={index}/>
       ))}
+      <input type="submit" value="envoyer"/>
     </form>
   )
 }
