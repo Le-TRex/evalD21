@@ -11,8 +11,8 @@ function Question ({question}) {
     if (type === "radio") {
       return (
 
-        <div className="form-question">
-          <p>{question.question}</p>
+        <Fragment>
+          <h3>{question.question}</h3>
           <div>
             {options.map((option, index) => (
               <div key={index}>
@@ -21,13 +21,13 @@ function Question ({question}) {
               </div>
             ))}
           </div>
-        </div>
+        </Fragment>
 
       )
     }else if (type === "checkbox"){
       return(
-        <div className="form-question">
-          <p>{question.question}</p>
+        <Fragment>
+          <h3>{question.question}</h3>
           <div>
             {options.map((option, index) => (
               <div key={index}>
@@ -36,28 +36,30 @@ function Question ({question}) {
               </div>
             ))}
           </div>
-        </div>
+        </Fragment>
       )
     }else if (type === "text"){
       return (
-        <div className="form-question">
-          <p>
-            <label htmlFor={question.answer.name}>{question.question}</label>
+        <Fragment>
+          <div className="inputTypeText">
+            <h3>
+              <label htmlFor={question.answer.name}>{question.question} : </label>
+            </h3>
             <input type={type} name={question.answer.name} id={question.answer.name}/>
-          </p>
-        </div>
+          </div>
+        </Fragment>
       )
     }else {
       return (
-        <div className="form-question">
-          <p>{question.question}</p>
+        <Fragment>
+          <h3>{question.question}</h3>
           <div>
             <input type="radio" name={answerName} value="oui" id="oui"/>
             <label htmlFor="oui">oui</label>
             <input type="radio" name={answerName} value="non" id="non"/>
             <label htmlFor="non">non</label>
           </div>
-        </div>
+        </Fragment>
       )
     }
   }
