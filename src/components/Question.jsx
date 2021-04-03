@@ -1,5 +1,5 @@
-import {Fragment} from 'react'
-import Switches from './Switch'
+import { Fragment } from 'react'
+import '../stylesheets/question.css'
 
 function Question ({question}) {
 
@@ -10,7 +10,8 @@ function Question ({question}) {
 
     if (type === "radio") {
       return (
-        <Fragment>
+
+        <div className="form-question">
           <p>{question.question}</p>
           <div>
             {options.map((option, index) => (
@@ -20,11 +21,12 @@ function Question ({question}) {
               </div>
             ))}
           </div>
-        </Fragment>
+        </div>
+
       )
     }else if (type === "checkbox"){
       return(
-        <Fragment>
+        <div className="form-question">
           <p>{question.question}</p>
           <div>
             {options.map((option, index) => (
@@ -34,34 +36,34 @@ function Question ({question}) {
               </div>
             ))}
           </div>
-        </Fragment>
+        </div>
       )
     }else if (type === "text"){
       return (
-        <p>
-          <label htmlFor={question.answer.name}>{question.question}</label>
-          <input type={type} name={question.answer.name} id={question.answer.name}/>
-        </p>
+        <div className="form-question">
+          <p>
+            <label htmlFor={question.answer.name}>{question.question}</label>
+            <input type={type} name={question.answer.name} id={question.answer.name}/>
+          </p>
+        </div>
       )
     }else {
       return (
-        //TODO Lier le switch de Material-ui à la question au lieu des inputs type radio
-        <Fragment>
+        <div className="form-question">
           <p>{question.question}</p>
-          <Switches />
           <div>
             <input type="radio" name={answerName} value="oui" id="oui"/>
             <label htmlFor="oui">oui</label>
             <input type="radio" name={answerName} value="non" id="non"/>
             <label htmlFor="non">non</label>
           </div>
-        </Fragment>
+        </div>
       )
     }
   }
 
   return(
-    <div className="question">
+    <div className="form-question">
       {displayQuestionDependingOnItsType(question)}
     </div>
   )
