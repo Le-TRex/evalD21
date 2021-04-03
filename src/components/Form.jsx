@@ -1,6 +1,7 @@
 
-import exam from '../qcm';
+import exam from '../qcm'
 import Question from './Question'
+import '../stylesheets/form.css'
 
 function Form(){
   return(
