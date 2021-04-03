@@ -1,3 +1,12 @@
+@media screen and (max-width: 500px)
+{
+    .inputTypeText {
+        display: flex;
+        flex-direction: column;
+        /*align-items: center;*/
+    }
+}
+
 .form-question {
     border: 2px solid #ffc4dc;
     border-radius: 50px;
@@ -5,7 +14,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/*TODO mobile flex-direction column et pas de margin-left sur input*/
+
 .inputTypeText {
     display: flex;
     align-items: center;
@@ -14,6 +23,10 @@
 .inputTypeText > input {
     height: 32px;
     margin-left: 10px;
+    color: #7d51a0;
+    background-color: rgba(125, 81, 160, 0.2);
+    border: 1px solid #ffc4dc;
+    border-radius: 5px;
 }
 
 h3 {
