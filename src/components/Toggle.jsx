@@ -11,7 +11,7 @@ let Toggle = (props) => {
   };
 
   return(
-    <Fragment>
+    <div className="toggle">
       <label className="switch" >
         <h3>{props.toggleContent.question}</h3>
       </label>
@@ -24,7 +24,7 @@ let Toggle = (props) => {
       />
 
       <input  type="hidden" value={state.checkedA} name={props.toggleContent.answer.name}/>
-    </Fragment>
+    </div>
   );
 }
 
