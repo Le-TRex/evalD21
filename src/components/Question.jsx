@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import Toggle from './Toggle'
 import '../stylesheets/question.css'
 
 function Question ({question}) {
@@ -10,7 +11,6 @@ function Question ({question}) {
 
     if (type === "radio") {
       return (
-
         <Fragment>
           <h3>{question.question}</h3>
           <div>
@@ -52,13 +52,7 @@ function Question ({question}) {
     }else {
       return (
         <Fragment>
-          <h3>{question.question}</h3>
-          <div>
-            <input type="radio" name={answerName} value="oui" id="oui"/>
-            <label htmlFor="oui">oui</label>
-            <input type="radio" name={answerName} value="non" id="non"/>
-            <label htmlFor="non">non</label>
-          </div>
+          <Toggle toggleContent={question} />
         </Fragment>
       )
     }
