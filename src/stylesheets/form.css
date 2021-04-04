@@ -13,3 +13,9 @@ form {
     border: 1px solid #7d51a0;
     border-radius: 25px;
 }
+
+.submit:hover {
+    font-size: 400;
+    background-color: rgba(125, 81, 160, 0.2);
+    border: 2px solid #7d51a0;
+}
