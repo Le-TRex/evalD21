@@ -3,3 +3,7 @@
     flex-direction: column;
     align-items: center;
 }
+
+.MuiIconButton-label {
+    color: #7d51a0;
+}
